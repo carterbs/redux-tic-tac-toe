@@ -29,6 +29,7 @@ function persistance({ getState }) {
 }
 const store = createStore(reducer,
 	initialState,
-	applyMiddleware(persistance));
+	applyMiddleware(persistance)
+);
 
 export default store;
